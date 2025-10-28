@@ -1,0 +1,48 @@
+``` ruby
+print "Entre Nombre un : "
+n1 = gets.chomp.to_f
+
+print "Entre Opération (+, -, *, /) : "
+op = gets.chomp
+
+print "Entre Nombre deux : "
+n2 = gets.chomp.to_f
+
+case op
+when "+"
+  result = n1 + n2
+  puts "Calcul #{n1} + #{n2} = #{result}"
+when "-"
+  result = n1 - n2
+  puts "Calcul #{n1} - #{n2} = #{result}"
+when "*"
+  result = n1 * n2
+  puts "Calcul #{n1} * #{n2} = #{result}"
+when "/"
+  if n2 != 0
+    result = n1.to_f / n2
+    puts "Calcul #{n1} / #{n2} = #{result}"
+  else
+    puts "error"
+  end
+else
+  puts "Erreur"
+end
+```
+```c
+#include<stdio.h>
+int main(){
+    int x;
+FILE *file = fopen("txt.txt","a");
+if (file == NULL)
+{
+  printf("ERROR OPEN FILE !");
+  return 0;
+
+}
+fprintf(file,"hhhhhhhhhhh",x);
+fclose(file);
+
+}
+
+```
