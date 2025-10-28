@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Simple Git Push Script for first-time use
+
+# Initialize git
+git init
+
+# Add all files
+git add .
+
+# Commit changes
+git commit -m "First commit"
+
+# Link to your GitHub repo
+git remote add origin https://github.com/mrxlahrange/MR.X01X.git
+
+# Make sure main branch
+git branch -M main
+
+# Push to GitHub
+git push -u origin main
+
+echo "✅ All files pushed to GitHub!"
+
